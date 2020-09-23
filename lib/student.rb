@@ -1,15 +1,14 @@
 class Student < User
   attr_accessor :knowledge
-# @@knowledge=[]
   def new
     @knowledge = []
   end
 
   def learn(string)
-    @@knowledge<<string
+    @knowledge<<string
   end
 
   def knowledge
-    @@knowledge
+    @knowledge
   end
 end
